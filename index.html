@@ -2,63 +2,62 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>pagina_web_israel</title>
+    <title>pagina_wed_israel</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-   <!-- MENU ENCABEZADO --> 
+    <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
         <header>
             <div class="logo">
-                <a href="#">ISRAEL</a>
+                <a href="#">Israel</a>
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#sobremi">SOBRE MI</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#curriculum">CURRICULUM</a></li>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive">
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
-            
         </header>
     </div>
 
-
-    <!-- SECCION DE INICIO--> 
+    <!-- SECCION INICIO -->
     <section id="inicio" class="inicio">
-            <div class="contenedor-banner">
-                <div class="contenedor-img">
-                    <img src="img/faceprin1.png" alt="">
-                </div>
-                <h1>ISRAEL LIMA CONDORI</h1>
-                <h2>ESTUDIANTE DE ING. INFORMATICA</h2>
-                <div class="redes">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
-                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-                    <a href="#"><i class="fa-solid fa-rss"></i></a>
-                </div>
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/faceprin1.png" alt="">
             </div>
+            <h1>ISRAEL LIMA CONDORI</h1>
+            <h2>ESTUDIANTE DE ING. INFORMATICA</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
     </section>
-    
-    <!--SECCION SOBRE MI-->
-    <seccion class="sobremi" id="sobremi">
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
-            <h2>Sobre Mi</h2>
-            <p><span>Hola, soy Israel Lima Condori.</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam excepturi, ipsam sapiente distinctio ab laudantium recusandae provident ducimus unde odit eius nisi, reiciendis minus? Necessitatibus iste tempora at consequuntur pariatur!</p>
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Israel Lima.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti repellendus aliquid debitis maiores numquam voluptate reprehenderit in delectus dolores.</p>
 
             <div class="fila">
-                <!-- datos personales-->
-                 <div class="col">
+                <!-- datos personales -->
+                <div class="col">
                     <h3>Datos Personales</h3>
                     <ul>
                         <li>
@@ -69,6 +68,7 @@
                             <strong>Celular</strong>
                             68319277
                         </li>
+                        <li>
                             <strong>Email</strong>
                             israellimacondori32@gamil.com
                         </li>
@@ -77,7 +77,7 @@
                             israellima03
                         </li>
                         <li>
-                            <strong>Direccion</strong>
+                            <strong>Dirección</strong>
                             UBR. SOCAMANI MZ. 13 LT. 29,ORURO BOLIVIA
                         </li>
                         <li>
@@ -85,19 +85,365 @@
                             <span>Estudiante</span>
                         </li>
                     </ul>
-                 </div>
-                 <!-- intereses-->
-                  <div class="col">
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
                     <h3>Intereses</h3>
                     <div class="contenedor-intereses">
-                        <div class="intereses">
+                        <div class="interes">
                             <i class="fa-solid fa-gamepad"></i>
                             <span>JUEGOS</span>
                         </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-windows"></i>
+                            <span>WINDOWS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-python"></i>
+                            <span>PROGRAMAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-swimming"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
                     </div>
-                  </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Skills Tecnicas</h3>
+                    <div class="skill">
+                        <span>C++</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>25%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>12%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>15%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Matematicas</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>35%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>conduccion</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Microsoft Office</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Ingles</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>12%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Skills Profecionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>58%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Gestion de Proyectos</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>20%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </seccion>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingenieria Informatica</h4>
+                        <span class="casa">Facultad Nacional de Ingenieria(FNI)</span>
+                        <span class="fecha">2023 - actualmente</span>
+                        <p>Actualmente curso la carrera de Ingeniería Informática en la mencion de Desarollo de software en la Facultad Nacional de Ingenieria. Durante mis estudios, he desarrollado sólidos conocimientos en el area de las matematicas y los lenguajes de programacion de C++,Java,Python y he participado en proyectos personales las cuales son una tienda virtual, un punto de ventas que se encuentran en mi github, donde las ser mis primeros proyectos tube una aficion para la hora de programar y encontrar error y por aportar con mis conocientos personales. Estoy especialmente interesado en el area de desarrollador web y ciberseguridad y busco oportunidades para aplicar mis habilidades en un entorno profesional.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Campamento de programacion</h4>
+                        <span class="casa">Facultad Nacional de Ingenieria(FNI)</span>
+                        <span class="fecha">2024/06/21 - 2024/06/30</span>
+                        <p>Participacion en un campamento de programacion donde pudimos ver a manos la calidad y competividad de las competencia de programacion y nos enseñaron a manejer los algoritmos para una mejor uso de ellos.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Curso de Arreglo de Computadoras</h4>
+                        <span class="casa">Facultad Nacional de Ingenieria(FNI)</span>
+                        <span class="fecha">2023/09/20 - 2023/10/19</span>
+                        <p>Participacion de un curso de arreglo de computadoras organizada por la carrera de sistemas e informatica, donde nos enseñaron al mantenimiento de las computadoras y a su mejor uso.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Programador</h4>
+                        <span class="casa">Actualizacion tecnologica</span>
+                        <span class="fecha">2024/08/04 - 2024/12/03</span>
+                        <p>Forme parte de un grupo de personas que se organizaba para realizar un sitio web para una mejor organizacion de las paradas de buses que pese de los problemas siguio adelante</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Conduccion y Contabilidad</h4>
+                        <span class="casa">IMPROSAL BELEN</span>
+                        <span class="fecha">2015 - actualmente</span>
+                        <p>Aprendi a manejar una movilidad ya que mi padre fue conductor de transporte pesado, donde junto ami hermano formaron su empresa y al ser hijo me fue incultado el manejo de las movilidades desde mis 14 años y ayudae a trabajar en la contabilidad de la empresa de sal medio tiempo en epoca de clases y tiempo completo en vaciones se me daba un sueldo y la experiencia de viajar con transporte pesado</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/porta1.png" alt="">
+                    <div class="overlay">
+                        <h3>Starbucks</h3>
+                        <p>Dia de cafe</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/porta2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Castillo de la glorieta</h3>
+                        <p>paseo por Sucre</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/porta3.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Rio Ichilo</h3>
+                        <p>Dia de Pesca</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/porta4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Playa Hilo Peru</h3>
+                        <p>paseo por la playa</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/porta5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Boca del Rio Peru</h3>
+                        <p>Paseo por la costa</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/porta6.png" alt="">
+                    <div class="overlay">
+                        <h3>Misionero</h3>
+                        <p>camion donde aprendi a manejar</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/porta7.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Santa Cruz de la sierra</h3>
+                        <p>Churrasco</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/porta8.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Cena de Gala</h3>
+                        <p>Amigos</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/porta9.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Santa Cruz de la Sierra</h3>
+                        <p>Paseo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                URB. SOCAMANI MZ. 13 LT. 29, ORURO-BOLIVIA
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamame: 68319277 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: israellimacondori32@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>  
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
